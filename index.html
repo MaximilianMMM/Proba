@@ -1,201 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kl</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>klteemcode</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Flavors&family=K2D&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
 <body>
     <header>
         <div class="header">
             <div class="header__menu__slogan">
-                <div class="header__menu">
-                    <div class="header__logo">
-                        <h1 class="logo__text">kl</h1>
+                <div class="menu__slogan">
+                    <div class="header__menu">
+                        <div class="header__logo">
+                            <h2 class="kltekst">kl</h2><!---дві букви лого-->
+                        </div>
+                        <div class="buttons">
+                            <div class="menu__buttons">
+                                <button class="button__header"><span>our services</span></button>  <!---кнопка our services -->
+                                <button onclick="scrollToProjectsSection()" class="button__header"><span>our projects</span></button> <!---кнопкаour projects-->
+                            </div>
+                
+                            <div class="menu__buttons">
+                                    <button class="button__header" onclick="scrollToTeamSection()"><span>our team</span></button> <!---кнопка our team-->
+                                    <button class="button__header" onclick="window.location.href='lk.html'"><span>own office</span></button> <!--кнопка own office-->
+                            </div>
+                        </div>
                     </div>
-                    <div class="header__nav">
-                        <nav class="header__list">
-                            <ul class="nav__list">
-                                <li class="nav__item">our services</li>
-                                <li class="nav__item">our team</li>
-                                <li class="nav__item">our projects</li>
-                                <a href="#">
-                                    <li class="nav__item">own office</li>
-                                </a>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
 
-                <div class="header__slogan">
-                    <h1 class="slogan__we">we</h1>
-                    <h2 class="slogan__do">reate, automate, listening</h2>
+                    <div class="header__slogan">
+                        <p1 class="we">we</p1>
+                        <div class="ral__box">
+                            <p2 class="ral">reate,</p2>
+                            <p2 class="ral">automate,</p2>
+                            <p2 class="ral">listening</p2>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
             
-            <div class="header__img">
-                <img src="img/other/header img.jpg" alt="header img">
-            </div>
-            
+            <img class="f1"><!---картинка-->
         </div>
     </header>
 
-    <section class="our__services">
-        <h2>тут має бути опис компанії і “чому саме ми”</h2>
-    </section>
+    <div class="gap"></div> <!--порожня секція-->
 
-    <section class="our__team">
-        <div class="team">
-            <div class="team__title">
-                <div class="title__name">
-                    <h2 class="title__name__box">our team</h2>
-                </div>
-            </div>
-            <div class="team__logo">
-                <div class="logo__section">
-                    <h1 class="logo__text">kl</h1>
-                </div>
-            </div>
+    <div class="team">
+        <a class="ot__team"><p4 id="team-section" class="tot">our team</p4></a>
+
+        <div class="team__kltekst__border">
+            <h2 class="kltekst__section">kl</h2>
         </div>
-    
-        <div class="team__menu">
-            <button class="team__back"></button>
-            <div class="gallery-container">
-                <div class="team__member">
-                    <img src="img/Team/pasha.jpg" alt="pasha">
-                    <h2 class="member__name">pasha</h2>
-                </div>
+    </div>
 
-                <div class="team__member">
-                    <img src="img/Team/sasha.jpg" alt="sasha">
-                    <h2 class="member__name">sasha</h2>
-                    <div class="member__role">
-    
-                        <h2 class="role__name"></h2>
-                    </div>
-                </div>
-    
-                <div class="team__member">
-                    <img src="img/Team/vika.jpg" alt="vika">
-                    <h2 class="member__name">vika</h2>
-                    <div class="member__role">
-    
-                        <h2 class="role__name"></h2>
-                    </div>
-                </div>
-    
-                <div class="team__member">
-                    <img src="img/Team/vova.jpg" alt="vova">
-                    <h2 class="member__name">vova</h2>
-                    <div class="member__role">
-    
-                        <h2 class="role__name"></h2>
-                    </div>
-                </div>
-    
-                <div class="team__member">
-                    <img src="img/Team/marina.jpg" alt="marina">
-                    <h2 class="member__name">marina</h2>
-                    <div class="member__role">
-    
-                        <h2 class="role__name"></h2>
-                    </div>
-                </div>
+    <div class="team__members">
+        <div  class="flex-container pasha">
+            <div class="flex-item obvod">
+                <span>pasha</span>
             </div>
-            <button class="team__next"></button>
-        </div>
-    </section>
-
-    <section class="our__projects">
-        <div class="projects">
-            <div class="projects__title">
-                <div class="title__name">
-                    <h2 class="title__name__box">our projects</h2>
-                </div>
-            </div>
-            <div class="projects__logo">
-                <div class="logo__section">
-                    <h1 class="logo__text">kl</h1>
-                </div>
-            </div>
-        </div>
-
-        <div class="projects__menu">
-            <button class="projects__back"></button>
-            <div class="projects__unit">
-                <img src="img/projects/zirka place.jpg" alt="zirka place">
-            </div>
-
-            <div class="projects__unit">
-                <img src="img/projects/cm.jpg" alt="cm">
-            </div>
-            <button class="projects__next"></button>
-        </div>
-    </section>
-
-    <section class="more">
-        <div class="more__box">
-            <img src="img/other/more.jpg" alt="more img" class="more__img">
-            <div class="more__text">
-                <h2>click to see more</h2>
-            </div>
-        </div>
-    </section>
-
-    <section class="text__form">
-        <div class="text__form__box">
-            <h2 class="text__form__text">to get a consultation, choose the dowry that interests you</h2>
-        </div>
-    </section>
-
-    <section class="form">
-        <div class="form__box">
-            <form class="form__all">
-                <div class="form__choise">
-                    <label class="form__choise__label">
-                        <input type="radio" name="service" checked>
-                        <span class="form__choise__text">послуга 1</span>
-                    </label>
-                    <label class="form__choise__label">
-                        <input type="radio" name="service">
-                        <span class="form__choise__text">послуга 2</span>
-                    </label>
-                    <label class="form__choise__label">
-                        <input type="radio" name="service">
-                        <span class="form__choise__text">послуга 3</span>
-                    </label>
-                    <label class="form__choise__label">
-                        <input type="radio" name="service">
-                        <span class="form__choise__text">послуга 4</span>
-                    </label>
-                    <label class="form__choise__label">
-                        <input type="radio" name="service">
-                        <span class="form__choise__text">послуга 5</span>
-                    </label>
-                </div>
             
-                <div class="form__input">
-                    <label class="form__input__label">
-                        <span class="form__input__text">contacts</span>
-                        <input type="text">
-                    </label>
-                    <label class="form__input__label">
-                        <span class="form__input__text">name</span>
-                        <input type="text">
-                    </label>
-                    <label class="form__input__label">
-                        <span class="form__input__text">Gmail</span>
-                        <input type="text">
-                    </label>
-                    <label class="form__input__label">
-                        <span class="form__input__text">comments</span>
-                        <input type="text">
-                    </label>
-                    <input type="submit" value="send" class="form__button">
-                </div>
-            </form>            
+            <div class="flex-item yacashuinia">
+              <svg xmlns="http://www.w3.org/2000/svg" width="413" height="153" viewBox="0 0 413 153" fill="none">
+                <g filter="url(#filter0_d_15_12)">
+                  <path d="M4 45L104 0.5L255.5 65.5L409 37.5V94L255.5 144.5L104 79.5L4 113V45Z" fill="url(#paint0_linear_15_12)" shape-rendering="crispEdges"/>
+                </g>
+                
+                <defs>
+                  <filter id="filter0_d_15_12" x="0" y="0.5" width="413" height="152" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_15_12"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_15_12" result="shape"/>
+                  </filter>
+                  
+                  <linearGradient id="paint0_linear_15_12" x1="398.494" y1="74.6498" x2="2.38643" y2="53.1135" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#04DBC3" stop-opacity="0.54"/>
+                    <stop offset="1" stop-color="#028A78"/>
+                  </linearGradient>
+    
+                </defs>
+              </svg>
+    
+              <div class="posadap">team-leader</div>
+              
+            </div>
         </div>
-    </section>
+    
+        <div  class="flex-container sasha">
+            <div class="flex-item obvod">
+                <span>sasha</span>
+            </div>
+            
+            <div class="flex-item yacashuinia">
+              <svg xmlns="http://www.w3.org/2000/svg" width="413" height="153" viewBox="0 0 413 153" fill="none">
+                <g filter="url(#filter0_d_15_12)">
+                  <path d="M4 45L104 0.5L255.5 65.5L409 37.5V94L255.5 144.5L104 79.5L4 113V45Z" fill="url(#paint0_linear_15_12)" shape-rendering="crispEdges"/>
+                </g>
+                
+                <defs>
+                  <filter id="filter0_d_15_12" x="0" y="0.5" width="413" height="152" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_15_12"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_15_12" result="shape"/>
+                  </filter>
+                  
+                  <linearGradient id="paint0_linear_15_12" x1="398.494" y1="74.6498" x2="2.38643" y2="53.1135" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#04DBC3" stop-opacity="0.54"/>
+                    <stop offset="1" stop-color="#028A78"/>
+                  </linearGradient>
+    
+                </defs>
+              </svg>
+    
+              <div class="posadap">coder</div>
+              
+            </div>
+        </div>
+
+        <div  class="flex-container vika">
+            <div class="flex-item obvod">
+                <span>vika</span>
+            </div>
+            
+            <div class="flex-item yacashuinia">
+              <svg xmlns="http://www.w3.org/2000/svg" width="413" height="153" viewBox="0 0 413 153" fill="none">
+                <g filter="url(#filter0_d_15_12)">
+                  <path d="M4 45L104 0.5L255.5 65.5L409 37.5V94L255.5 144.5L104 79.5L4 113V45Z" fill="url(#paint0_linear_15_12)" shape-rendering="crispEdges"/>
+                </g>
+                
+                <defs>
+                  <filter id="filter0_d_15_12" x="0" y="0.5" width="413" height="152" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_15_12"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_15_12" result="shape"/>
+                  </filter>
+                  
+                  <linearGradient id="paint0_linear_15_12" x1="398.494" y1="74.6498" x2="2.38643" y2="53.1135" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#04DBC3" stop-opacity="0.54"/>
+                    <stop offset="1" stop-color="#028A78"/>
+                  </linearGradient>
+    
+                </defs>
+              </svg>
+    
+              <div class="posadap">designer</div>
+              
+            </div>
+        </div>
+
+        <!--
+
+        <div  class="flex-container vova">
+            <div class="flex-item obvod">
+                <span>vova</span>
+            </div>
+            
+            <div class="flex-item yacashuinia">
+              <svg xmlns="http://www.w3.org/2000/svg" width="413" height="153" viewBox="0 0 413 153" fill="none">
+                <g filter="url(#filter0_d_15_12)">
+                  <path d="M4 45L104 0.5L255.5 65.5L409 37.5V94L255.5 144.5L104 79.5L4 113V45Z" fill="url(#paint0_linear_15_12)" shape-rendering="crispEdges"/>
+                </g>
+                
+                <defs>
+                  <filter id="filter0_d_15_12" x="0" y="0.5" width="413" height="152" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_15_12"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_15_12" result="shape"/>
+                  </filter>
+                  
+                  <linearGradient id="paint0_linear_15_12" x1="398.494" y1="74.6498" x2="2.38643" y2="53.1135" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#04DBC3" stop-opacity="0.54"/>
+                    <stop offset="1" stop-color="#028A78"/>
+                  </linearGradient>
+    
+                </defs>
+              </svg>
+    
+              <div class="posadap"></div>
+              
+            </div>
+        </div>
+
+        <div  class="flex-container marina">
+            <div class="flex-item obvod">
+                <span>marina</span>
+            </div>
+            
+            <div class="flex-item yacashuinia">
+              <svg xmlns="http://www.w3.org/2000/svg" width="413" height="153" viewBox="0 0 413 153" fill="none">
+                <g filter="url(#filter0_d_15_12)">
+                  <path d="M4 45L104 0.5L255.5 65.5L409 37.5V94L255.5 144.5L104 79.5L4 113V45Z" fill="url(#paint0_linear_15_12)" shape-rendering="crispEdges"/>
+                </g>
+                
+                <defs>
+                  <filter id="filter0_d_15_12" x="0" y="0.5" width="413" height="152" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_15_12"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_15_12" result="shape"/>
+                  </filter>
+                  
+                  <linearGradient id="paint0_linear_15_12" x1="398.494" y1="74.6498" x2="2.38643" y2="53.1135" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#04DBC3" stop-opacity="0.54"/>
+                    <stop offset="1" stop-color="#028A78"/>
+                  </linearGradient>
+    
+                </defs>
+              </svg>
+    
+              <div class="posadap"></div>
+              
+            </div>
+        </div> -->
+    </div>
+
+    <div class="projects">
+        <a class="ot__projects"><p4 id="team-section" class="tot">our projects</p4></a>
+
+        <div class="projects__kltekst__border">
+            <h2 class="kltekst__section">kl</h2>
+        </div>
+    </div>
+
+    <div class="ops">
+        <button class="flex-item lknop"></button>
+        <button id="zirkaplaceButton" class="flex-item zp"></button>
+        <button id="marcoclinic" class="flex-item mc"></button>
+        <button class="flex-item pknop"></button>
+    </div>
+
+    <div class="more">
+        <div class="kartknop">
+            <button class="flex-item knopinkart"><span>click to see more</span></button>
+        </div>
+    </div>
+
+    <div class="tekst">
+        <div class="flex-item lin"></div>
+        <div class="flex-item toget">to get a consultation, choose the dowry that interests you</div>
+        <div class="flex-item lindva"></div>
+        <div class="flex-item strl"></div>
+    </div>
+
 </body>
 </html>
