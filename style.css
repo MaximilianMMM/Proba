@@ -189,6 +189,7 @@
 .team__members{
     display: flex;
     margin-bottom: 230px;
+    width: 100vh;
 }
 
 .flex-container {
@@ -466,8 +467,7 @@
     }
 
     .header__menu{
-        margin-top: 3%;
+        margin-top: 70px;
         align-self: center;
-        
     }
 }
