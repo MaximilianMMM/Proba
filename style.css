@@ -198,7 +198,8 @@
 .team__members{
     display: flex;
     margin-bottom: 230px;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .flex-container {
@@ -211,8 +212,6 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 60px;
-    margin-top: 50px;
 }
 
 .obvod{
@@ -301,9 +300,23 @@
     margin-top: 230px;
 }
 
-.zp{
-    width: 26.25rem;
+.projects__four{
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+}
+
+.two__projects{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 52.5rem;
     height: 24.9375rem;
+}
+
+.zp{
+    width: 24.25rem;
+    height: 22.9375rem;
     border-radius: 5.3125rem;
     border: 4px solid var(--2, #04DBC3);
     background: url(/img/zirka\ place\ mobile.jpg), lightgray 50% / cover no-repeat;
@@ -314,8 +327,8 @@
 }
 
 .mc{
-    width: 26.25rem;
-    height: 24.9375rem;
+    width: 24.25rem;
+    height: 22.9375rem;
     border-radius: 5.3125rem;
     border: 4px solid var(--2, #04DBC3);
     background: url(img/cm\ mobile.jpg), lightgray 50% / cover no-repeat;
@@ -454,6 +467,12 @@
     background: linear-gradient(271deg, rgba(4, 219, 195, 0.54) 3.46%, #028A78 99.7%);
 }
 
+.strl__box{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
 .strl{
     width: 12.3125rem;
     height: 18.8125rem;
@@ -461,6 +480,12 @@
     background-position: center; /* Вирівнює зображення по центру */
     background-size: cover;
     margin-top: 10px;
+    align-self: center;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
 }
 
 .text__form__box{
@@ -549,34 +574,26 @@
 @media only screen and (max-width: 1300px) {
     .header{
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
         margin: 0px;
-        max-width: 100vh;
     }
 
     .header__menu__slogan{
         display: flex;
         align-items: flex-start;
-        
     }
 
     .menu__slogan{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-    }
-
-    .header__slogan{
-        display: flex;
-        flex-direction: column;
-        order: -1;
+        width: 100vh;
     }
 
     .f1{
         width: 32.875rem;
         height: 29.375rem;
-        margin-top: -10rem;
     }
 
     .header__menu{
@@ -594,16 +611,6 @@
         display: flex;
         margin-bottom: 230px;
         min-height: 100vh;
-    }
-
-    .zp{
-        width: 26.25rem;
-        height: 55.8125rem;
-    }
-    
-    .mc{
-        width: 26.25rem;
-        height: 55.8125rem;
     }
 
     .kartknop{
@@ -618,52 +625,52 @@
 
 }
 
+@media screen and  (max-width: 1100px){
+    .two__projects{
+        flex-direction: column;
+    }
+
+    .two__projects{
+        width: 26.25rem;
+        height: 48.1875rem;
+    }
+
+    .lin{
+        width: 40.063rem;
+        height: 0.3125rem;
+        background: linear-gradient(271deg, rgba(4, 219, 195, 0.54) 3.46%, #028A78 99.7%);
+    }
+    
+    .lindva{
+        width: 40.063rem;
+        height: 0.3125rem;
+        background: linear-gradient(271deg, rgba(4, 219, 195, 0.54) 3.46%, #028A78 99.7%);
+    }
+
+    .toget{
+        width: 43rem;
+        font-size: 3.75rem;
+    }
+}
+
+@media screen and  (max-width: 950px){
+    .buttons{
+        flex-direction: column;
+    }
+
+    .knopinkart{
+        width: 32.563rem;
+        height: 6.5rem;
+    }
+}
 
 @media screen and  (max-width: 830px){
-    .header{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        margin: 0px;
-        max-width: 100vh;
-    }
-
-    .header__menu__slogan{
-        display: flex;
-        align-items: flex-start;
-        
-    }
-
-    .menu__slogan{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: auto;
-        height: auto;
-    }
-
-    .header__slogan{
-        display: flex;
-        flex-direction: column;
-        order: -1;
-    }
 
     .f1{
         width: 20rem;
         height: 17rem;
-        margin-top: -10rem;
     }
 
-    .header__menu{
-        margin-top: 70px;
-        max-width: 100vh;
-    }
-
-    .buttons{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
 
     .team__members{
         display: flex;
@@ -671,47 +678,14 @@
         min-height: 100vh;
     }
 
-    .zp{
-        width: 26.25rem;
-        height: 55.8125rem;
-    }
-    
-    .mc{
-        width: 26.25rem;
-        height: 55.8125rem;
-    }
-
     .kartknop{
         width: 87.5rem;
         height: 196.4375rem;
-    }
-
-    .lin{
-        width: 45.75rem;
-        height: 0.3125rem;
-        background: linear-gradient(271deg, rgba(4, 219, 195, 0.54) 3.46%, #028A78 99.7%);
     }
 
     .tekst{
         min-height: 100vh;
         align-self: center;
     }
-
-    .lindva{
-    width: 45.75rem;
-    height: 0.3125rem;
-    background: linear-gradient(271deg, rgba(4, 219, 195, 0.54) 3.46%, #028A78 99.7%);
-    }
-
-
-    
-        .button__header span{
-            color: #FFF;
-            font-family: JejuGothic;
-            font-size: 3rem;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-        }
-    }
+}
     
