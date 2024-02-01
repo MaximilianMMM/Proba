@@ -196,10 +196,14 @@
 }
 
 .team__members{
-    display: flex;
+    margin-top: 230px;
     margin-bottom: 230px;
-    justify-content: space-between;
-    align-items: center;
+    align-content: center;
+}
+
+.team__nobtns{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .flex-container {
@@ -273,8 +277,8 @@
     background-size: cover; /* Масштабує зображення, щоб воно відповідало розміру блоку */
 }
 
-.vika{
-    background: url(img/vika.jpg), lightgray 50% / cover no-repeat;
+.maximilian{
+    background: url(img/maximilian.jpg), lightgray 50% / cover no-repeat;
     background-position: center; /* Вирівнює зображення по центру */
     background-size: cover; /* Масштабує зображення, щоб воно відповідало розміру блоку */
 }
@@ -571,6 +575,19 @@
 
 /* Медіазапит */
 
+@media only screen and (max-width: 1500px) {
+    .team__members{
+        height: 130.4375rem;
+        justify-content: center;
+    }
+
+    .team__nobtns{
+        flex-direction: column;
+        align-items: center;
+        height: 130.4375rem;
+    }
+}
+
 @media only screen and (max-width: 1300px) {
     .header{
         display: flex;
@@ -689,7 +706,7 @@
     }
 }
 
-@media screen and  (max-width: 730px){
+@media screen and  (max-width: 770px){
     .header__slogan{
         flex-direction: column;
     }
