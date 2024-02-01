@@ -575,17 +575,8 @@
 
 /* Медіазапит */
 
-@media only screen and (max-width: 1500px) {
-    .team__members{
-        height: 130.4375rem;
-        justify-content: center;
-    }
-
-    .team__nobtns{
-        flex-direction: column;
-        align-items: center;
-        height: 130.4375rem;
-    }
+@media only screen and (max-width: 1400px) {
+    
 }
 
 @media only screen and (max-width: 1300px) {
@@ -628,6 +619,14 @@
         display: flex;
         margin-bottom: 230px;
         min-height: 100vh;
+        height: 130.4375rem;
+        justify-content: center;
+    }
+
+    .team__nobtns{
+        flex-direction: column;
+        align-items: center;
+        height: 130.4375rem;
     }
 
     .kartknop{
