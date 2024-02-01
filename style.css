@@ -686,9 +686,25 @@
         height: 196.4375rem;
     }
 
+    .lin{
+        width: 45.75rem;
+        height: 0.3125rem;
+        background: linear-gradient(271deg, rgba(4, 219, 195, 0.54) 3.46%, #028A78 99.7%);
+    }
+
     .tekst{
         min-height: 100vh;
         align-self: center;
+    }
+
+    .lindva{
+    width: 45.75rem;
+    height: 0.3125rem;
+    background: linear-gradient(271deg, rgba(4, 219, 195, 0.54) 3.46%, #028A78 99.7%);
+    }
+
+
+    
         .button__header span{
             color: #FFF;
             font-family: JejuGothic;
@@ -698,6 +714,4 @@
             line-height: normal;
         }
     }
-
-}
     
