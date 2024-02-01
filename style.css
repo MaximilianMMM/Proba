@@ -198,6 +198,7 @@
 .team__members{
     display: flex;
     margin-bottom: 230px;
+    justify-content: center;
 }
 
 .flex-container {
