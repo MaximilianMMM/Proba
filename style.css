@@ -688,4 +688,10 @@
         align-self: center;
     }
 }
+
+@media screen and  (max-width: 730px){
+    .header__slogan{
+        flex-direction: column;
+    }
+}
     
