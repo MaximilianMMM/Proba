@@ -536,3 +536,87 @@
     }
 
 }
+
+
+
+@media screen and  (max-width: 600px){
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 0px;
+        max-width: 100vh;
+    }
+
+    .header__menu__slogan{
+        display: flex;
+        align-items: flex-start;
+        
+    }
+
+    .menu__slogan{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: auto;
+        height: auto;
+    }
+
+    .header__slogan{
+        display: flex;
+        flex-direction: column;
+        order: -1;
+    }
+
+    .f1{
+        width: 20rem;
+        height: 17rem;
+        margin-top: -10rem;
+    }
+
+    .header__menu{
+        margin-top: 70px;
+        max-width: 100vh;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .team__members{
+        display: flex;
+        margin-bottom: 230px;
+        min-height: 100vh;
+    }
+
+    .zp{
+        width: 26.25rem;
+        height: 55.8125rem;
+    }
+    
+    .mc{
+        width: 26.25rem;
+        height: 55.8125rem;
+    }
+
+    .kartknop{
+        width: 87.5rem;
+        height: 196.4375rem;
+    }
+
+    .tekst{
+        min-height: 100vh;
+        align-self: center;
+        .button__header span{
+            color: #FFF;
+            font-family: JejuGothic;
+            font-size: 3rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+}
