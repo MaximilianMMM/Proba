@@ -9,6 +9,7 @@
 
 .header__menu__slogan{
     width: 60%;
+    margin-top: 10rem;
 }
     
 .menu__slogan{
@@ -492,86 +493,80 @@
     justify-content: center;
 }
 
-.text__form__box{
-        font-family: "Kalam";
-        font-size: 80px;
-        font-weight: 400;
-        line-height: 128px;
-        letter-spacing: 0em;
-        text-align: center;
-        background: linear-gradient(180deg, #2C454F -14.93%, #018673 124.89%);
-        background-clip: text;
-        color: transparent;
-        border-top: 5px solid #018673;
-        border-bottom: 5px solid #018673;
-        width: 70%;
-        margin-top: 10vw;
-        margin-bottom: 10vw;
-    }
+.form__all{
+    border: 5px solid #018673;
+    border-radius: 100px;
+    display: flex;
+    width: 65rem;
+    height: 45.125rem;
+    justify-content: space-evenly;
+}
 
-    .form__all{
-        border: 5px solid #018673;
-        border-radius: 100px;
-        display: flex;
-        width: 70%;
-        justify-content: space-between;
-    }
+.form__choise{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
-    .form__choise__label {
-        margin-left: 15vw;
-        display: block;
-        margin-bottom: 10px;
-        background: linear-gradient(180deg, #2C454F -14.93%, #018673 124.89%);
-        background-clip: text;
-        color: transparent;
-    }
+.form__choise__label {
+    background: linear-gradient(180deg, #2C454F -14.93%, #018673 124.89%);
+    background-clip: text;
+    color: transparent;
+}
 
-    .form__choise__text {
-        display: inline-block;
-        padding: 5px 10px;
-        border: 1px solid #018673;
-        border-radius: 100px;
-        cursor: pointer;
-    }
+.form__choise__label input {
+    display: none;
+}
 
-    .form__choise__text:hover {
-        background-color: #018673;
-    }
+.form__choise__text{
+    font-family: K2D;
+    font-size: 30px;
+    background: linear-gradient(180deg, #2C454F -14.93%, #018673 124.89%);
+    border-radius: 100px;
+    background-clip: text;
+    color: transparent;
+    padding: 5px 10px;
+    border: 1px solid #018673;
+    border-radius: 100px;
+    cursor: pointer;
+    width: 14rem;
+    height: 4.063rem;
+}
 
-    .form__choise__label input {
-        display: none;
-    }
+.form__input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
-    .form__input__label {
-        display: block;
-        margin-bottom: 10px;
-        margin-right: 15vw;
-        background: linear-gradient(180deg, #2C454F -14.93%, #018673 124.89%);
-        background-clip: text;
-        color: transparent;
-    }
+.form__input__label {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #2C454F -14.93%, #018673 124.89%);
+    background-clip: text;
+    color: transparent;
+}
 
-    .form__input__text {
-        display: block;
-        margin-bottom: 5px;
-    }
+.input__text{
+    width: 27.625rem;
+    height: 4.875rem;
+    border: 1px solid #018673;
+    border-radius: 100px;
+    font-family: Kalam;
+    font-size: 80px;
+}
 
-    .form__input__label input {
-        display: inline-block;
-        padding: 5px 10px;
-        border: 1px solid #018673;
-        border-radius: 100px;
-    }
-
-    .form__button {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #018673;
-        color: #fff;
-        border: none;
-        border-radius: 50px;
-        cursor: pointer;
-    }
+.form__button {
+    background-color: #018673;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 27.625rem;
+    height: 4.875rem;
+    font-family: Kalam;
+    font-size: 40px;
+}
 
 /* Медіазапит */
 
@@ -586,6 +581,7 @@
     .header__menu__slogan{
         display: flex;
         align-items: flex-start;
+        margin-top: 0rem;
     }
 
     .menu__slogan{
@@ -663,6 +659,41 @@
         width: 43rem;
         font-size: 3.75rem;
     }
+
+    .form__all{
+        border: none;
+        height: 110.256rem;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100vh;
+    }
+
+    .form__choise{
+        height: 52.128rem;
+        width: 40rem;
+    }
+
+    .form__choise__label{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .form__choise__text{
+        height: 8.688rem;
+        width: 40rem;
+    }
+
+    .form__input{
+        height: 8.688rem;
+        width: 40rem;
+    }
+
+    .input__text{
+        height: 8.688rem;
+        width: 40rem;
+    }
 }
 
 @media screen and  (max-width: 950px){
@@ -699,11 +730,19 @@
         min-height: 100vh;
         align-self: center;
     }
+
+    .form__all{
+        width: 100vh;
+    }
 }
 
 @media screen and  (max-width: 770px){
     .header__slogan{
         flex-direction: column;
+    }
+
+    form__all{
+        width: 100vh;
     }
 }
     
