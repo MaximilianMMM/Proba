@@ -734,6 +734,34 @@
     .form__all{
         width: 100vh;
     }
+
+    .form__choise{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .form__choise__label{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .form__choise__text{
+        height: 8.688rem;
+        width: 30rem;
+    }
+
+    .form__input{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .input__text{
+        height: 8.688rem;
+        width: 30rem;
+    }
 }
 
 @media screen and  (max-width: 770px){
@@ -741,7 +769,7 @@
         flex-direction: column;
     }
 
-    form__all{
+    .form__all{
         width: 100vh;
     }
 }
